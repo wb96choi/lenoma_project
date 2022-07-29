@@ -1,7 +1,22 @@
+/* style.css */
+:root {
+    --brand-color : #fec82f;
+    --main-color: #fef200;
+    --sub-color: #ed1b25;
+    --bg-color-light: #f1f1f1;
+    --text-color: #111;
+    --text-color-light: #666;
+
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 ul {
     list-style-type: none;
@@ -9,4 +24,61 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+}
+button:hover {
+    cursor: pointer;
+}
+#detail {
+    height: 50px;
+    width: 245px;
+    border-radius: 0px;
+    padding: 10px;
+    background-color: var(--sub-color);
+    color: #fff;
+}
+
+#main-header {
+    background-color: #fff;
+}
+#main-header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#main-header .container h1 a {
+    
+}
+#main-header .container h1 a img {
+    position: absolute;
+    width: 20vw;
+}
+#main-header #toggle {
+    position: absolute;
+    right: 22px;
+}
+#main-header nav {
+    position: absolute;
+    right: 30px;
+}
+.gnb {
+    display: flex;
+    gap: 140px;
+}
+
+#main-visual {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCEEAD;
+}
+
+#product-intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
 }
