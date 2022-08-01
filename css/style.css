@@ -1,84 +1,68 @@
-/* style.css */
+/* style.css 공통으로 사용하는 CSS */
 :root {
-    --brand-color : #fec82f;
+    --brand-color: #fec82f;
     --main-color: #fef200;
     --sub-color: #ed1b25;
     --bg-color-light: #f1f1f1;
-    --text-color: #111;
+    --text-color-dark: #111;
     --text-color-light: #666;
-
-}
-* {
+  
+    /* 배너 색상 */
+    --banner-bg-color1: #FCEEAD;
+    --banner-bg-color2: #C1A3D9;
+    --banner-bg-color3: #BEDE71;
+  
+    /* header 높이값 */
+    --pc-header-height: 90px;
+    --mobile-header-height: 60px;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
-}
-ul {
-    list-style-type: none;
-}
-a {
+  }
+  
+  a {
     text-decoration: none;
-    color: inherit;
-}
-button {
-    border-style: none;
-    background-color: transparent;
-}
-button:hover {
+  }
+  
+  ul  {
+    list-style-type: none;
+  }
+  
+  button:hover {
     cursor: pointer;
-}
-#detail {
-    height: 50px;
+  }
+  
+  #main-header a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn {
+    font-size: 16px;
     width: 245px;
-    border-radius: 0px;
-    padding: 10px;
-    background-color: var(--sub-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #ED1B25; */
+    color: #000;
+    border: 1px solid var(--sub-color);
+  }
+  
+  .btn-detail {
+    background: #ED1B25;
     color: #fff;
-}
-
-#main-header {
-    background-color: #fff;
-}
-#main-header .container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-#main-header .container h1 a {
-    
-}
-#main-header .container h1 a img {
-    position: absolute;
-    width: 20vw;
-}
-#main-header #toggle {
-    position: absolute;
-    right: 22px;
-}
-#main-header nav {
-    position: absolute;
-    right: 30px;
-}
-.gnb {
-    display: flex;
-    gap: 140px;
-}
-
-#main-visual {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #FCEEAD;
-}
-
-#product-intro {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--main-color);
-}
+  }
+  
+  #main-header {
+    z-index: 999;
+  }
