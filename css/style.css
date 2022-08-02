@@ -16,7 +16,10 @@
     --pc-header-height: 90px;
     --mobile-header-height: 60px;
   }
-  
+  /* 부드러운 페이지 이동 */
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
@@ -35,7 +38,10 @@
   ul  {
     list-style-type: none;
   }
-  
+  button {
+    background-color: transparent;
+    border-style: none;
+  }
   button:hover {
     cursor: pointer;
   }
@@ -65,4 +71,8 @@
   
   #main-header {
     z-index: 999;
+  }
+  
+  #main-visual {
+    background: var(--banner-bg-color3);
   }
