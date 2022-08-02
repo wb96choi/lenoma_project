@@ -13,7 +13,7 @@
 5. 동영상 모달창 구현
 6. smooth page scroll
     - scroll-behavior: smooth
-7. 
+7. 박대리는 렙틸리언이야
 ## 라이브러리
 - 제이쿼리
 - AOS
